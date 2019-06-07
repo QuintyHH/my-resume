@@ -1,32 +1,32 @@
 //-Data
 -
-  var header = '#about-me'
+  var header = '#about me'
   var imagePath ="asset/image/avatar.png"
   var myName = "Razvan Mocanu"
   var myTitle = "Front-End Web Developer"
-  var myMotto = "War does not determine who is right - Only who is left."
+  var myMotto = "Every once in a while, a new technology, an old problem, and a big idea turn into an innovation."
   var achievements = {
-    title: 'Achievement',
-    content: 'content',
+    title: '#achievement',
+    content: "Early 30's, I enjoy pizza, sitcoms and eviscerating lesser mortals with my blistering wit.",
   }
 
   var grabStuff = {
-    title:'More cool stuff!',
+    title:'#more cool stuff',
     buttonList: [
       {
         url:'https://github.com/QuintyHH/my-resume',
         icon:'github',
-        label:'Click to visit this GitHub project source!',
+        label:"Click to visit this CV's GitHub project source!",
+      },
+      {
+        url:'asset/pdf/CVRazvanMocanu.pdf',
+        icon:'file-pdf',
+        label:'Click to download my abbreviated resume!',
       },
       {
         url:'https://github.com/QuintyHH/my-resume',
-        icon:'github',
-        label:'Click to visit this GitHub project source!',
-      },
-      {
-        url:'https://github.com/QuintyHH/my-resume',
-        icon:'github',
-        label:'Click to visit this GitHub project source!',
+        icon:'file-pdf',
+        label:'Click to download my fully detailed resume!',
       }
     ]
   }
@@ -35,18 +35,18 @@
 #about-me
 .about-me
   .about-me__header=header
-  .about-me_avatar-wrapper
+  .about-me__avatar-wrapper
     img.about-me__avatar(src=imagePath)
   .about-me__full-name=myName
-  .about-me__full-title=myTitle
+  .about-me__title=myTitle
   .about-me__motto=myMotto
 
   .about-me__title=achievements.title
-  .about-me__title=achievements.content
+  .about-me__content=achievements.content
 
   .about-me__title=grabStuff.title
   .about-me__link-list
     each button in grabStuff.buttonList
-      a(href=button.url)
+      a.about-me__link(href=button.url)
         span.about-me__link-description=button.label
         span(class=`my-cv__icon--${button.icon}`)
