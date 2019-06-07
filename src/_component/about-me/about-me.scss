@@ -8,10 +8,10 @@
 
 .about-me__header {
   color: $color-white;
-  font-style: italic;
   padding: 1.5rem 3rem;
   margin-bottom: 1rem;
-  font-size: 3.2rem;
+  font-size: 4rem;
+  text-align: center;
 }
 
 .about-me__avatar {
@@ -46,20 +46,19 @@
 }
 
 .about-me__title {
-  font-size: 1.7rem;
-  font-style: italic;
+  font-size: 2rem;
   color: $color-white;
   text-align: center;
-  padding: 0.3rem 1rem 2rem;
+  padding: 0.3rem 1rem 1.5rem;
 }
 
 .about-me__motto,
 .about-me__content {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-align: justify;
   text-indent: 4rem;
   color: $color-fiord;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 .about-me__link-list {
@@ -71,14 +70,14 @@
   width: 80%;
   font-size: 3rem;
   text-decoration: none;
-  border: 0.3rem solid $color-fiord;
-  border-radius: 2rem;
-  background-color: white;
+  border: 0.3rem solid $color-white;
+  border-radius: 4rem;
+  background-color: $color-fiord;
   margin: 0.5rem auto;
   display:flex;
   justify-content: space-around;
   align-items: center;
-  color: $color-fiord;
+  color: $color-white;
   padding: 1rem;
 }
 
