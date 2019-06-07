@@ -1,0 +1,52 @@
+//-Data
+-
+  var header = '#about-me'
+  var imagePath ="asset/image/avatar.png"
+  var myName = "Razvan Mocanu"
+  var myTitle = "Front-End Web Developer"
+  var myMotto = "War does not determine who is right - Only who is left."
+  var achievements = {
+    title: 'Achievement',
+    content: 'content',
+  }
+
+  var grabStuff = {
+    title:'More cool stuff!',
+    buttonList: [
+      {
+        url:'https://github.com/QuintyHH/my-resume',
+        icon:'github',
+        label:'Click to visit this GitHub project source!',
+      },
+      {
+        url:'https://github.com/QuintyHH/my-resume',
+        icon:'github',
+        label:'Click to visit this GitHub project source!',
+      },
+      {
+        url:'https://github.com/QuintyHH/my-resume',
+        icon:'github',
+        label:'Click to visit this GitHub project source!',
+      }
+    ]
+  }
+
+//-View
+#about-me
+.about-me
+  .about-me__header=header
+  .about-me_avatar-wrapper
+    img.about-me__avatar(src=imagePath)
+  .about-me__full-name=myName
+  .about-me__full-title=myTitle
+  .about-me__motto=myMotto
+
+  .about-me__title=achievements.title
+  .about-me__title=achievements.content
+
+  .about-me__title=grabStuff.title
+  .about-me__link-list
+    each button in grabStuff.buttonList
+      a(href=button.url)
+        span.about-me__link-description=button.label
+        span(class=`my-cv__icon--${button.icon}`)
