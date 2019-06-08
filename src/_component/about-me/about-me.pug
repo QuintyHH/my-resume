@@ -1,12 +1,11 @@
 //-Data
 -
   var header = '#about me'
-  var imagePath ="asset/image/avatar.png"
   var myName = "Razvan Mocanu"
   var myTitle = "Front-End Web Developer"
   var myMotto = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   var achievements = {
-    title: '#achievement',
+    title: '#achievements',
     content: " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   }
 
@@ -24,9 +23,9 @@
         label:'Click to download my abbreviated resume!',
       },
       {
-        url:'https://github.com/QuintyHH/my-resume',
+        url:'asset/pdf/CVRazvanMocanu.pdf',
         icon:'file-pdf',
-        label:'Click to download my fully detailed resume!',
+        label:'Click to download my detailed resume!',
       }
     ]
   }
@@ -36,7 +35,6 @@
 .about-me
   .about-me__header=header
   .about-me__avatar-wrapper
-    img.about-me__avatar(src=imagePath)
   .about-me__full-name=myName
   .about-me__title=myTitle
   .about-me__motto=myMotto

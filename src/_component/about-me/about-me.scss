@@ -1,52 +1,49 @@
 .about-me {
   background-image: radial-gradient(
-    ellipse,
     $color-terracotta,
-    $color-sunglow,
+    $color-sunglow,    
   );
+  padding: 1rem,
 }
 
 .about-me__header {
   color: $color-white;
-  padding: 1.5rem 3rem;
-  margin-bottom: 1rem;
-  font-size: 4rem;
-  text-align: center;
-}
-
-.about-me__avatar {
-  border-radius: 50%;
-  width: 100%;
-  border: 0.7rem solid $color-fiord;
+  @extend %header;
 }
 
 .about-me__avatar-wrapper {
-  max-width: 40%;
+  max-width: 100%;
   margin: 1rem auto;
-  border: 0.5rem solid rgba($color: $color-fiord, $alpha: 0.5);
+  border: 0.3rem solid $color-fiord;
   border-radius: 50%;
   position: relative;
+  background-image: url(asset/image/avatar.png);
+  width: 400px;
+  height:400px;
+  background-size: cover;
 
   &::after {
     content:'';
     position: absolute;
     border: 0.4rem solid rgba($color: $color-fiord, $alpha: 0.3);
-    top: -1.2rem;
-    bottom: -1.2rem;
-    left: -1.2rem;
-    right: -1.2rem;
+    top: -0.8rem;
+    bottom: -0.8rem;
+    left: -0.8rem;
+    right: -0.8rem;
     border-radius: 50%;
   }
+
 }
 
 .about-me__full-name {
   color: $color-white;
-  font-size: 3.4rem;
+  font-size: 3rem;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .about-me__title {
-  font-size: 2rem;
+  font-size: 2.25rem;
   color: $color-white;
   text-align: center;
   padding: 0.3rem 1rem 1.5rem;
@@ -66,22 +63,22 @@
 }
 
 .about-me__link {
-  display: inline-block;
-  width: 80%;
-  font-size: 3rem;
+  display: flex;
+  width: 50%;
+  font-size: 2rem;
   text-decoration: none;
-  border: 0.3rem solid $color-white;
-  border-radius: 4rem;
+  border: 0.2rem solid $color-white;
+  border-radius: 1.3rem;
   background-color: $color-fiord;
-  margin: 0.5rem auto;
-  display:flex;
+  margin: 0.2rem auto;
   justify-content: space-around;
   align-items: center;
   color: $color-white;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .about-me__link-description {
-  font-size: 1.5rem;
-  line-height: 1.5
+  font-size: 1rem;
+  line-height: 1.5;
+  flex-grow: 1;  
 }

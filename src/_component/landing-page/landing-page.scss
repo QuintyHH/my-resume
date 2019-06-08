@@ -25,14 +25,14 @@
 
 .landing-page__social {
   display: flex;
-  margin-top: 4rem;
+  margin-top: 7rem;
   justify-content: center;
 }
 
 .landing-page__label {
   color: $color-white;
   padding: 0.1rem 0.3rem;
-  font-size: 2rem;
+  font-size: 2.2rem;
   cursor: pointer;
 }
 
@@ -54,10 +54,10 @@
 
 .landing-page__box-body {
   display: inline-block;
-  border: 0.2rem solid $color-white;
-  border-radius: 0.6rem;
+  border: 0.3rem solid $color-white;
+  border-radius: 0.7rem;
   padding: 0.8rem;
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
   position: relative;
 }
 
@@ -83,7 +83,7 @@
 .landing-page__box-info {
   border-bottom-left-radius: 0.6rem;
   flex-grow: 1;
-  font-size:1rem;
+  font-size:1.2rem;
   color: $color-gumbo;
 }
 
@@ -91,20 +91,20 @@
   border-bottom-right-radius: 0.6rem;
   cursor: pointer;
   width: 2.5rem;
-  font-size: 2rem; 
+  font-size: 2.2rem; 
   color: $color-gumbo;
 }
 
 .landing-page__box-link,
 .landing-page__box-link:visited,
 .landing-page__box-message {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: $color-sunglow;
 }
 
 .landing-page__box-link,
 .landing-page__box-link:visited {
-  font-size: 1rem;
+  font-size: 1.2rem;
   white-space: nowrap;
   text-decoration: none;
   overflow: hidden;

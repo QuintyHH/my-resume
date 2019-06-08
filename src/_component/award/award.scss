@@ -1,3 +1,4 @@
-#award {
-  color: red;
+.award__header {
+  color: $color-fiord;
+  @extend %header;
 }
