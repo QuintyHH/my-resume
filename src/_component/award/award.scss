@@ -1,4 +1,59 @@
+.award {
+  background: $color-fiord;
+  color: $color-white;
+  padding: 0rem 0rem 0.1rem;
+  }
+
 .award__header {
-  color: $color-fiord;
+  color: $color-white;
   @extend %header;
+}
+
+.award__title {
+  font-weight: bold;
+}
+
+.award__card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  background: $color-fiord;
+  color: $color-white;
+  border-bottom: 0.1rem solid $color-white;
+  border-top: 0.1rem solid $color-white;
+
+  .award__icon {
+    width: 20%;
+    font-size:2rem;
+    padding: 2rem;
+    color: $color-white;
+    align-items: center;
+    display: flex;
+    border-right: 0.1rem solid $color-white;
+  }
+
+  &>div:nth-child(even) {
+    width: 80%;
+    padding: 0rem 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &>div:nth-child(1) {
+    background-color: $color-violet-red;
+  }
+  &>div:nth-child(3) {
+    background-color: $color-yellow-green;
+  }
+  &>div:nth-child(5) {
+    background-color: $color-robins-egg-blue;
+  }
+  &>div:nth-child(7) {
+    background-color: $color-carrot-orange;
+  }
+  &>div:nth-child(4) {
+    font-style: italic;
+  }
 }

@@ -1,5 +1,37 @@
 -
-  var awardHeader = "#awards"
+  var awardHeader = "#diplomas"
+  var awardList = [
+    {
+      title: " Atestat de competente profesionale - Operare pe calculator",
+      description: "Testul a fost sustinut la Liceul Tehnologic de Electrotehnica si Telecomunicatii si a fost compus din 2 probe, si anume construirea unui program si sustinerea unui test teoretic.",
+      location: "Constanta - Romania",
+      date: "2003",
+    },
+    {
+      title: "First Certificate in English - Cambridge Advanced English Assessment",
+      description: "Testul a fost sustinut la Liceul International de Informatica Constanta si a fost compus din 4 module, sustinut in decursul a 4 zile.",
+      location: "Constanta - Romania",
+      date: "2003",
+    }
+  ];
+
 #award 
 .award
   .award__header=awardHeader
+  each award in awardList
+    .award__card
+      .award__icon
+        span.my-cv__icon--trophy
+      .award__title=award.title
+      
+      .award__icon
+        span.my-cv__icon--info
+      .award__description=award.description
+      
+      .award__icon
+        span.my-cv__icon--map2
+      .award__location=award.location
+
+      .award__icon
+        span.my-cv__icon--calendar
+      .award__date=award.date

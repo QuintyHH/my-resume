@@ -2,14 +2,12 @@
   var myName = "Razvan Mocanu"
   var myJobTitle = "Front-End Web Developer"
   var socialList =[
-    {icon: 'google-plus2', url: 'https://www.facebook.com/mysthh'},
-    {icon: 'facebook2', url: 'https://www.facebook.com/wee'},
-    {icon: 'twitter', url: 'https://www.facebook.com/aaah'},
-    {icon: 'youtube', url: 'https://www.facebook.com/test'},
-    {icon: 'github', url: 'https://www.facebook.com/neenoo'},
-    {icon: 'stackoverflow', url: 'https://www.facebook.com/wow'},
-    {icon: 'linkedin', url: 'https://www.facebook.com/lol'},
-    {icon: 'skype', url: 'https://www.facebook.com/gigi'},
+    {icon: 'facebook2', url: 'https://www.facebook.com/mysthh',socialName: 'Facebook'},
+    {icon: 'twitter', url: 'https://www.facebook.com/aaah',socialName: 'Twitter'},
+    {icon: 'github', url: 'https://github.com/QuintyHH',socialName: 'GitHub'},
+    {icon: 'stackoverflow', url: 'https://stackoverflow.com/users/11619718/razvan-mocanu',socialName: 'StackOverflow'},
+    {icon: 'linkedin', url: 'https://www.linkedin.com/in/razvan-victor-mocanu-273040188/',socialName: 'LinkedIn'},
+    {icon: 'skype', url: 'https://join.skype.com/invite/eg9iS1MdyFDy',socialName: 'Skype'},
   ]
 
 #landing-page
@@ -26,9 +24,9 @@
       input.landing-page__box-radio(type="radio", name="res-radio", checked, id="default-message-radio")
       .landing-page__box-message Click the icons to expand!
       .landing-page__box-header
-        .landing-page__box-info Click the link!
+        .landing-page__box-info Click to continue!
         label.landing-page__box-close(for="default-message-radio") &times;
       each social, key in socialList
         input.landing-page__box-radio(type="radio", name="res-radio", id=`message-box-id-${key}`)
         .landing-page__box-message
-          a.landing-page__box-link(href=social.url, target="_blank")=social.url
+          a.landing-page__box-link(href=social.url, target="_blank")=social.socialName
