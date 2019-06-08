@@ -59,14 +59,16 @@
   padding: 0.8rem;
   margin-top: 0.8rem;
   position: relative;
+  
+  width: 83%;
 }
 
 .landing-page__box-header {
   position: absolute;
-  left: 10%;
-  right: 10%;
+  left: 30%;
+  right: 0%;
   top: 100%;
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
 }
 
