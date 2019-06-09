@@ -12,13 +12,13 @@
 
 .landing-page__name {
   padding-bottom: 0.3rem;
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   color: $color-white;
 }
 
 .landing-page__title {
-  font-size: 2.25rem;
+  font-size: 3rem;
   text-transform: capitalize;
   color: $color-sunglow;
 }
@@ -26,14 +26,19 @@
 .landing-page__social {
   display: flex;
   margin-top: 7rem;
+  margin-bottom: 1rem;
   justify-content: center;
 }
 
 .landing-page__label {
   color: $color-white;
-  padding: 0.1rem 0.8rem;
-  font-size: 2.2rem;
+  font-size: 4.5rem;
+  width: 80%;
   cursor: pointer;
+    
+  &:hover {
+    color: $color-sunglow;
+  }
 }
 
 .landing-page__box-radio:checked + 
@@ -53,70 +58,36 @@
 }
 
 .landing-page__box-body {
-  display: inline-block;
-  border: 0.3rem solid $color-white;
-  border-radius: 0.7rem;
-  padding: 0.8rem;
-  margin-top: 0.8rem;
-  position: relative;
-  
-  width: 83%;
+  border: 0.4rem solid $color-white;
+  border-radius: 3rem;
+  margin: 0 auto;
+  width: 75%;
 }
 
-.landing-page__box-header {
-  position: absolute;
-  left: 30%;
-  right: 0%;
-  top: 100%;
-  display: inline-flex;
-  justify-content: space-between;
-}
-
-.landing-page__box-info,
-.landing-page__box-close {
-  background: $color-white;
-  padding: 0.4rem;
-  white-space: nowrap;
-  line-height: 1.5rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.landing-page__box-info {
-  border-bottom-left-radius: 0.6rem;
-  flex-grow: 1;
-  font-size:1.2rem;
-  color: $color-gumbo;
-}
-
-.landing-page__box-close {
-  border-bottom-right-radius: 0.6rem;
-  cursor: pointer;
-  width: 2.5rem;
-  font-size: 2.2rem; 
-  color: $color-gumbo;
-}
-
-.landing-page__box-link,
-.landing-page__box-link:visited,
 .landing-page__box-message {
-  font-size: 1.2rem;
-  color: $color-sunglow;
-}
+  font-size: 2.3rem;
+  height: 2.5rem;
+  color: $color-sunglow; 
+  }
 
 .landing-page__box-link,
 .landing-page__box-link:visited {
-  font-size: 1.2rem;
-  white-space: nowrap;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 80vmin;
-  display: block
+  width: 85%; 
+  float: left;  
+  font-size: 2rem;
+  height: 2.5rem;
+  color: $color-sunglow;
+  margin: 0.2rem auto;
 }
 
-html[dir="rtl"] {
-  .landing-page__box-info {
-    order: 1;
-  }
-}
+.landing-page__box-close {
+  cursor: pointer;
+  font-size: 2.6rem; 
+  color: $color-manatee;  
+  background-color: white;
+  display: flex;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 0rem 1rem;
+ }

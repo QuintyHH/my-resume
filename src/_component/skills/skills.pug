@@ -1,0 +1,60 @@
+-
+    var header= '#my-skills';
+    var myTechList = [
+        {
+            title: 'FRONT-END',
+            skillList: [
+                'HTML5',
+                'CSS3',
+                'JavaScript',
+                'jQuery',
+                'React',
+                'JSON',
+                'UI',
+                'UX',
+                'SMACSS/OOCSS',
+                'SASS',
+                'Bootstrap',
+                'NodeJS',
+                'Pug',
+                'Gulp',
+                'PhotoShop',
+                'Illustrator',
+                'Premiere',
+                'AfterEffects',
+                'Lightroom'
+            ]
+        },
+        {
+            title: 'BACK-END',
+            skillList: [
+                'Git',
+                'CLI',
+                'REST',
+                'MySQL',
+                'Apache',
+                'WAMP',
+            ]
+        },
+        {
+            title: 'OS & OTHERS',
+            skillList: [
+                'Windows (all)',
+                'Word',
+                'Excel',
+                'PowerPoint',
+                'Slack',
+                'Zoom',
+                'Discord',
+            ]
+        }
+    ]
+
+#skills
+.skills
+  .skills__header=header
+  each tech in myTechList
+    .skills__title=tech.title
+    .skills__list
+      each skill in tech.skillList
+        .skills__skill=skill

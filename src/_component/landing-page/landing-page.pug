@@ -1,13 +1,12 @@
 -
   var myName = "Razvan Mocanu"
-  var myJobTitle = "Front-End Web Developer"
+  var myJobTitle = "Web.Developer"
   var socialList =[
-    {icon: 'facebook2', url: 'https://www.facebook.com/mysthh',socialName: 'Facebook'},
-    {icon: 'twitter', url: 'https://www.facebook.com/aaah',socialName: 'Twitter'},
-    {icon: 'github', url: 'https://github.com/QuintyHH',socialName: 'GitHub'},
-    {icon: 'stackoverflow', url: 'https://stackoverflow.com/users/11619718/razvan-mocanu',socialName: 'StackOverflow'},
-    {icon: 'linkedin', url: 'https://www.linkedin.com/in/razvan-victor-mocanu-273040188/',socialName: 'LinkedIn'},
-    {icon: 'skype', url: 'https://join.skype.com/invite/eg9iS1MdyFDy',socialName: 'Skype'},
+    {icon: 'social-facebook-circular', url: 'https://www.facebook.com/mysthh',socialName: 'Facebook'},
+    {icon: 'social-twitter-circular', url: 'https://www.facebook.com/aaah',socialName: 'Twitter'},
+    {icon: 'social-github-circular', url: 'https://github.com/QuintyHH',socialName: 'GitHub'},
+    {icon: 'social-linkedin-circular', url: 'https://www.linkedin.com/in/razvan-victor-mocanu-273040188/',socialName: 'LinkedIn'},
+    {icon: 'social-skype-outline', url: 'https://join.skype.com/invite/eg9iS1MdyFDy',socialName: 'Skype'},
   ]
 
 #landing-page
@@ -22,11 +21,9 @@
             span(class=`my-cv__icon--${social.icon}`)
     .landing-page__box-body
       input.landing-page__box-radio(type="radio", name="res-radio", checked, id="default-message-radio")
-      .landing-page__box-message Click the icons to expand!
-      .landing-page__box-header
-        .landing-page__box-info Click to continue!
-        label.landing-page__box-close(for="default-message-radio") &times;
+      .landing-page__box-message Click the icons
       each social, key in socialList
         input.landing-page__box-radio(type="radio", name="res-radio", id=`message-box-id-${key}`)
         .landing-page__box-message
           a.landing-page__box-link(href=social.url, target="_blank")=social.socialName
+          label.landing-page__box-close(for="default-message-radio") &times

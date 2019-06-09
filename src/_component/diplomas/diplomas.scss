@@ -7,6 +7,7 @@
 .award__header {
   color: $color-white;
   @extend %header;
+  padding: 2.5rem;
 }
 
 .award__title {
@@ -16,21 +17,20 @@
 .award__card {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   font-size: 1.2rem;
   line-height: 1.5rem;
   background: $color-fiord;
   color: $color-white;
-  border-bottom: 0.1rem solid $color-white;
-  border-top: 0.1rem solid $color-white;
 
   .award__icon {
     width: 20%;
-    font-size:2rem;
-    padding: 2rem;
+    font-size:2.5rem;
+    padding: 1.5rem;
     color: $color-white;
     align-items: center;
-    display: flex;
+    text-align: center;
+    display: flexbox;
     border-right: 0.1rem solid $color-white;
   }
 
@@ -41,11 +41,22 @@
     align-items: center;
   }
 
+  &>div:nth-child(odd) {
+    border: 0.3rem solid $color-white;
+    border-radius: 2rem;
+    margin-bottom: 0.1rem;
+
+    &:hover {
+      color: $color-fiord;
+      background-color: $color-white;
+    }
+  }
+
   &>div:nth-child(1) {
     background-color: $color-violet-red;
   }
   &>div:nth-child(3) {
-    background-color: $color-yellow-green;
+    background-color: $color-yellow-green;  
   }
   &>div:nth-child(5) {
     background-color: $color-robins-egg-blue;

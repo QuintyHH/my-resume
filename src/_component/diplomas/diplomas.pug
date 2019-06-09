@@ -1,5 +1,5 @@
 -
-  var awardHeader = "#diplomas"
+  var awardHeader = "#my-diplomas"
   var awardList = [
     {
       title: " Atestat de competente profesionale - Operare pe calculator",
@@ -21,7 +21,7 @@
   each award in awardList
     .award__card
       .award__icon
-        span.my-cv__icon--trophy
+        span.my-cv__icon--briefcase
       .award__title=award.title
       
       .award__icon
@@ -29,9 +29,9 @@
       .award__description=award.description
       
       .award__icon
-        span.my-cv__icon--map2
+        span.my-cv__icon--location
       .award__location=award.location
 
       .award__icon
-        span.my-cv__icon--calendar
+        span.my-cv__icon--calender
       .award__date=award.date
