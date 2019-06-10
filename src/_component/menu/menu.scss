@@ -1,0 +1,62 @@
+.menu {
+  padding: 2rem;
+  background-color: $color-fiord;
+  position: relative;
+}
+
+.menu__list {
+  border: 0.3rem solid $color-white;
+  border-radius: 3rem; 
+}
+
+.menu__url {
+  display: block;
+  padding: 1rem;
+  font-size: 2.5rem;
+  color: $color-white;
+  text-decoration: none;
+  border-bottom: 0.3rem solid $color-white;
+  
+  &:last-child {
+    border: 0;
+  }
+  
+  &:hover {
+    &:first-child
+    {
+      border-top-left-radius: 2.6rem;
+      border-top-right-radius: 2.6rem;
+      background-color: $color-sunglow;
+    }
+    &:last-child {
+      border: 0;
+      border-bottom-left-radius: 2.6rem;
+      border-bottom-right-radius: 2.6rem;
+      background-color: $color-sunglow;     
+    }
+    background-color: $color-sunglow;
+  }
+
+}
+
+.menu__label {
+  padding: 0 1rem;
+}
+
+.menu__to-go {
+  border:0.3rem solid $color-white;
+  background-color: $color-fiord;
+  color: $color-white;
+  position:fixed;
+  bottom:0;
+  right:0;
+  font-size: 3rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  margin: 0.5rem;
+
+  &:hover {
+    background-color: $color-sunglow;
+  }
+}

@@ -2,33 +2,33 @@
   var header = "#my-projects"
   var projectsList = [
     {
-      title: "title",
-      date: "thedate",
-      type: "type",
+      title: "Defiance v2",
+      url: "https://github.com/QuintyHH/Defiance",
+      type: "C# - Decal lib.",
       description: [
-        'stage 1',
-        'stage 2',
-        'stage 3',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+        'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       ],
     },
     {
-      title: "title2",
-      date: "thedate2",
-      type: "type2",
+      title: "My Resume",
+      url: "https://github.com/QuintyHH/Defiance",
+      type: "HTML5 / CSS3",
       description: [
-        'stage 12',
-        'stage 22',
-        'stage 32',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+        'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       ],
     },
     {
-      title: "title3",
-      date: "thedate3",
-      type: "type3",
+      title: "Quick Blog",
+      url: "https://github.com/QuintyHH/Defiance",
+      type: "JavaScript / React",
       description: [
-        'stage 13',
-        'stage 23',
-        'stage 33',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+        'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       ],
     }
   ];
@@ -36,15 +36,17 @@
 #projects 
 .projects
   .projects__header=header
-  input(type="radio", name="proj-radio", id="proj-default")
-  label(for="proj-default") &times;
+  input.project__input(type="radio", name="proj-radio", id="proj-default")
   each project, key in projectsList
     
     input.project__input(type="radio",name="proj-radio", id=`proj-id-${key}`)
-    label.project__title(for=`proj-id-${key}`)=project.title
+    label.project__title(for=`proj-id-${key}`)
+      | #{project.title}
+      label(for="proj-default") 
+        span.my-cv__icon--cancel-circle
     .project__details
       .project__top
-        .project__date=project.date
+        a.project__url(href=project.url, target="_blank")="GitHub it!"
         .project__type=project.type
       .project__list
         each stage in project.description

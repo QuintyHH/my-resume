@@ -1,8 +1,5 @@
 .about-me {
-  background-image: radial-gradient(
-    $color-sunglow,    
-    $color-yellow-sea,  
-  );
+  background-image: radial-gradient($color-sunglow,$color-yellow-sea);
   padding: 1rem;
  }
 
@@ -20,6 +17,7 @@
   width: 50%;
   padding: 25%;
   background-size: cover;
+  transition: 0.5s;
 
   &::after {
     content:'';
@@ -32,12 +30,22 @@
     border-radius: 50%;
   }
 
+  &:hover {
+    box-shadow: 0 0 10px rgba(255,255,255,1),
+                0 0 20px rgba(255,255,255,1),
+                0 0 30px rgba(255,255,255,1),
+                0 0 50px rgba(255,255,255,1),
+                0 0 70px rgba(255,255,255,0.5),
+                0 0 90px rgba(255,255,255,0.5);
+  }
+
 }
 
 .about-me__full-name {
   color: $color-white;
   font-size: 3rem;
   text-align: center;
+  font-weight: bold;
 }
 
 .about-me__title {
@@ -73,6 +81,8 @@
   align-items: center;
   color: $color-white;
   padding: 0.5rem;
+  font-weight: bold;
+  transition: 0.5s;
 
   &:hover {
     color: $color-sunglow;

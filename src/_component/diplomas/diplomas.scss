@@ -12,6 +12,7 @@
 
 .award__title {
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .award__card {
@@ -45,6 +46,7 @@
     border: 0.3rem solid $color-white;
     border-radius: 2rem;
     margin-bottom: 0.1rem;
+    transition: 0.5s;
 
     &:hover {
       color: $color-fiord;
