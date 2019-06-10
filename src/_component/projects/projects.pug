@@ -1,0 +1,51 @@
+-
+  var header = "#my-projects"
+  var projectsList = [
+    {
+      title: "title",
+      date: "thedate",
+      type: "type",
+      description: [
+        'stage 1',
+        'stage 2',
+        'stage 3',
+      ],
+    },
+    {
+      title: "title2",
+      date: "thedate2",
+      type: "type2",
+      description: [
+        'stage 12',
+        'stage 22',
+        'stage 32',
+      ],
+    },
+    {
+      title: "title3",
+      date: "thedate3",
+      type: "type3",
+      description: [
+        'stage 13',
+        'stage 23',
+        'stage 33',
+      ],
+    }
+  ];
+
+#projects 
+.projects
+  .projects__header=header
+  input(type="radio", name="proj-radio", id="proj-default")
+  label(for="proj-default") &times;
+  each project, key in projectsList
+    
+    input.project__input(type="radio",name="proj-radio", id=`proj-id-${key}`)
+    label.project__title(for=`proj-id-${key}`)=project.title
+    .project__details
+      .project__top
+        .project__date=project.date
+        .project__type=project.type
+      .project__list
+        each stage in project.description
+          .project__stage=stage

@@ -1,0 +1,19 @@
+.projects {
+  background: $color-fiord;
+  color: $color-white;
+  padding: 0rem 0rem 0.1rem;
+  }
+
+.projects__header {
+  color: $color-white;
+  @extend %header;
+  padding: 2.5rem;
+}
+
+.project__details {
+  display: none;
+}
+
+.project__input:checked + .project__title + .project__details {
+  display: inherit;
+}
