@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'my-cv';
   src:
-    url('asset/font/my-cv.ttf?oepb0g') format('truetype'),
-    url('asset/font/my-cv.woff?oepb0g') format('woff'),
-    url('asset/font/my-cv.svg?oepb0g#my-cv') format('svg');
+    url('asset/font/my-cv.ttf?ua61sm') format('truetype'),
+    url('asset/font/my-cv.woff?ua61sm') format('woff'),
+    url('asset/font/my-cv.svg?ua61sm#my-cv') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -11,7 +11,7 @@
 [class^="my-cv__icon--"], [class*=" my-cv__icon--"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'my-cv' !important;
-  speak-as: none;
+  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -23,38 +23,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.my-cv__icon--location:before {
-  content: "\e900";
-}
-.my-cv__icon--info:before {
-  content: "\e902";
-}
-.my-cv__icon--calender:before {
-  content: "\e903";
-}
-.my-cv__icon--th-menu-outline:before {
-  content: "\e905";
-}
-.my-cv__icon--home-outline:before {
-  content: "\e906";
-}
-.my-cv__icon--user-outline:before {
-  content: "\e90c";
-}
-.my-cv__icon--pen:before {
-  content: "\e90d";
+.my-cv__icon--chevron-right:before {
+  content: "\e901";
 }
 .my-cv__icon--social-github-circular:before {
   content: "\e907";
-}
-.my-cv__icon--briefcase:before {
-  content: "\e904";
-}
-.my-cv__icon--spanner-outline:before {
-  content: "\e90e";
-}
-.my-cv__icon--lightbulb:before {
-  content: "\e90f";
 }
 .my-cv__icon--social-twitter-circular:before {
   content: "\e908";
@@ -68,8 +41,29 @@
 .my-cv__icon--social-skype-outline:before {
   content: "\e90b";
 }
-.my-cv__icon--social-at-circular:before {
-  content: "\e901";
+.my-cv__icon--home:before {
+  content: "\e900";
+}
+.my-cv__icon--pencil2:before {
+  content: "\e906";
+}
+.my-cv__icon--book:before {
+  content: "\e91f";
+}
+.my-cv__icon--location2:before {
+  content: "\e948";
+}
+.my-cv__icon--calendar:before {
+  content: "\e953";
+}
+.my-cv__icon--user-tie:before {
+  content: "\e976";
+}
+.my-cv__icon--wrench:before {
+  content: "\e991";
+}
+.my-cv__icon--lab:before {
+  content: "\e9aa";
 }
 .my-cv__icon--cancel-circle:before {
   content: "\ea0d";

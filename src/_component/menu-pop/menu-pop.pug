@@ -1,0 +1,40 @@
+-
+    var menuList= [
+    {
+      label: '#home',
+      icon: 'home',
+      url: '#landing-page',
+    },
+      {
+      label: '#about-me',
+      icon: 'user-tie',
+      url: '#about-me',
+    },
+      {
+      label: '#my-diplomas',
+      icon: 'book',
+      url: '#award',
+    },
+      {
+      label: '#my-skills',
+      icon: 'wrench',
+      url: '#skills',
+    },
+      {
+      label: '#my-projects',
+      icon: 'lab',
+      url: '#projects',
+    },
+  ]
+
+input.menu-pop__input(type="checkbox", id="menu-pop")
+.menu-pop
+  label.menu-pop__button(for="menu-pop")
+    .menu-pop__message--hide
+      span.my-cv__icon--chevron-right
+    .menu-pop__message--show
+      span.my-cv__icon--chevron-right
+  .menu-pop__body
+    each menu in menuList
+      a.menu__url(href=menu.url)
+         span(class=`my-cv__icon--${menu.icon}`)    

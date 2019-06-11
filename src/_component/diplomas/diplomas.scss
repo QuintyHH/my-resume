@@ -7,7 +7,6 @@
 .award__header {
   color: $color-white;
   @extend %header;
-  padding: 2.5rem;
 }
 
 .award__title {
@@ -19,6 +18,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 3rem;
+  margin-left:0.3rem;
   font-size: 1.2rem;
   line-height: 1.5rem;
   background: $color-fiord;
@@ -26,12 +26,11 @@
 
   .award__icon {
     width: 20%;
-    font-size:2.5rem;
+    font-size:2rem;
     padding: 1.5rem;
     color: $color-white;
     align-items: center;
     text-align: center;
-    display: flexbox;
     border-right: 0.1rem solid $color-white;
   }
 
