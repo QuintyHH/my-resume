@@ -1,0 +1,23 @@
+-
+  var hide = "</hide warning>";
+  var descriptionList = [
+    'You are currently in landscape mode',
+    'For a better experience, you should:',
+  ];
+  var itemList = [
+    'on a mobile device, rotate to Portrait mode.',
+    'resize your browser window to Portrait mode.',
+  ];
+
+input.landscape__input(type="checkbox", id="landscape")
+.landscape
+    label.landscape__button(for="landscape") 
+        .landscape__message--show
+          span.my-cv__icon--notification
+        .landscape__message--hide=hide
+    .landscape__body
+        each description in descriptionList
+            p.landscape__description=description
+        ul.landscape__list
+            each item in itemList
+                li.landscape__item=item

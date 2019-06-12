@@ -1,0 +1,70 @@
+.landscape,
+.landscape__input {
+  display: none;
+}
+
+.landscape {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: radial-gradient($color-manatee,$color-fiord);
+  opacity: 0.95;
+  transition: 0.5s;
+}
+
+.landscape__button {
+  display: block;
+  background-color: $color-sunglow;
+  color: $color-fiord;
+  position: fixed;
+  top: 1rem;
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin: 0 auto;
+  border-radius: 2.5rem;
+  text-decoration: none;
+  border: 0.3rem solid $color-white;
+  transition: 0.5s;
+
+  &:hover {
+    color:$color-terracotta;
+    background-color: $color-white;
+  }
+}
+
+.landscape__description {
+  padding: 1rem 0;
+}
+
+@media (orientation: landscape) {
+  .landscape {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $color-white;
+      font-size: 1.5rem;
+  }
+
+  .landscape__list {
+      list-style-type: disc;
+  }
+
+  .landscape__message--show {
+      display: none;
+  }
+  
+  .landscape__message--hide {
+      display: block;      
+  }
+  
+  #landscape:checked + .landscape {
+    top: -100%;
+    .landscape__message--show {
+      display: block;
+    }
+    .landscape__message--hide {
+      display: none;     
+    }
+  }
+}
