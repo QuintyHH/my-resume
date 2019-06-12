@@ -70,3 +70,9 @@
     font-style: italic;
   }
 }
+
+html[dir="rtl"] {
+  .award__card{
+    margin-right: 4rem;
+  }
+}

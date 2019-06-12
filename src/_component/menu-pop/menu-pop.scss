@@ -3,6 +3,7 @@
 }
 
 .menu-pop {
+  opacity: 0.5;
   width: 3.5rem;
   position: fixed;
   right: 0;
@@ -17,6 +18,7 @@
 
   &:hover {
     color: $color-sunglow;
+    opacity: 1;
   }
 }
 

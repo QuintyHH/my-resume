@@ -11,3 +11,9 @@
   color: $color-fiord;
   margin: auto;
 }
+
+html[dir="rtl"] {
+  .footer-copyright {
+    margin-left: 0rem;
+  }
+}

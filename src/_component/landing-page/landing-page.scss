@@ -46,6 +46,7 @@
 .landing-page__box-radio:checked + 
 .landing-page__box-message {
   display: flex;
+  transition: 0.5s;
 }
 
 .landing-page__box-radio,
@@ -67,36 +68,30 @@
 }
 
 .landing-page__box-message {
-  font-size: 2.2rem;
-  height: 2.5rem;
+  font-size: 2.4rem;
+  height: 2.4rem;
   color: $color-sunglow; 
-  padding: 0.2rem;
+  margin: 0.2rem 0.2rem 0.2rem 0.2rem;
   justify-content: center;
-  }
+  font-weight: bold;
+  text-decoration: none;
+}
 
 .landing-page__box-link,
 .landing-page__box-link:visited {
   text-decoration: none;
   width: 85%; 
-  float: left;  
-  font-size: 2rem;
-  height: 2.5rem;
   color: $color-sunglow;
-  margin: 0.2rem auto;
-  font-weight: bold;
 }
 
 .landing-page__box-close {
   cursor: pointer;
-  float: right;
-  font-size: 2.2rem; 
-  color: $color-manatee;  
-  background-color: white;
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  padding: 0rem 1rem;
-  transition: 0.4s;
-  font-weight: bold;
+  font-size: 2.4rem; 
+  color: $color-manatee;
+  background-color: $color-white;
+  border-radius: 2rem;
+  padding: 0rem 1.5rem;
+  transition: 0.5s;
 
   &:hover {
     color: $color-sunglow;
