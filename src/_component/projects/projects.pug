@@ -37,8 +37,7 @@
 .projects
   .projects__header=header
   input.project__input(type="radio", name="proj-radio", id="proj-default")
-  each project, key in projectsList
-    
+  each project, key in projectsList    
     input.project__input(type="radio",name="proj-radio", id=`proj-id-${key}`)
     label.project__title(for=`proj-id-${key}`)
       | #{project.title}

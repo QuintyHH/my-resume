@@ -27,7 +27,7 @@
     },
   ]
 
-input.menu-pop__input(type="checkbox", id="menu-pop")
+input.menu-pop__input(type="checkbox", id="menu-pop", checked)
 .menu-pop
   label.menu-pop__button(for="menu-pop")
     .menu-pop__message--hide
@@ -37,4 +37,4 @@ input.menu-pop__input(type="checkbox", id="menu-pop")
   .menu-pop__body
     each menu in menuList
       a.menu__url(href=menu.url)
-         span(class=`my-cv__icon--${menu.icon}`)    
+         span(class=`my-cv__icon--${menu.icon}`)

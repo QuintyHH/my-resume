@@ -3,13 +3,14 @@
 }
 
 .menu-pop {
+  width: 3.5rem;
   position: fixed;
   right: 0;
-  top: 2rem;
+  bottom: 6rem;
   background-color: $color-fiord;
   border: 0.3rem solid $color-white;
   border-right: none;
-  padding: 1rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
   transition: 0.5s;
@@ -20,12 +21,13 @@
 }
 
 .menu-pop__button {
+  width: 3.5rem;
   background-color: $color-fiord;
   color: $color-white;
   border: 0.3rem solid $color-white;
   border-right: none;
   position:fixed;
-  bottom: 1rem;
+  bottom: 0.5rem;
   right: 0rem;
   font-size: 2.5rem;
   padding: 0.5rem;
@@ -44,7 +46,6 @@
 }
 
 .menu-pop__input:checked + .menu-pop {
-
   right:-100%;
   
   .menu-pop__message--show{

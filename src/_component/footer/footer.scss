@@ -1,0 +1,13 @@
+.footer {
+  background-image: radial-gradient($color-sunglow,$color-yellow-sea);
+  height: 5.5rem;
+  display:flex;
+}
+
+.footer-copyright {
+  width: 80%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: $color-fiord;
+  margin: auto;
+}
