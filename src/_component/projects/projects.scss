@@ -4,11 +4,6 @@
   padding: 0rem 0rem 2rem;
 }
 
-.projects__header {
-  color: $color-white;
-  @extend %header;
-}
-
 .project__details,
 .project__input {
   display: none;
@@ -18,20 +13,26 @@
   display: inherit;
 }
 
+.projects__header {
+  color: $color-white;
+  @extend %header;
+}
+
+
 .project__title {
   border:0.3rem solid $color-white;
   color: $color-white;
-  display: flex;
+  display: block;
   justify-content: space-between;
   font-size: 2rem;
   padding:1rem;
-  cursor: pointer;
   border-radius: 2rem;
   font-weight: bold; 
   transition: 0.5s;
-  width: 75%;
+  width: 77%;
   margin:auto;
   margin-top: 0.5rem;
+  cursor: pointer;
   
   &:hover {
     background-color: $color-sunglow;
@@ -48,7 +49,6 @@
 .project__url {
   text-decoration: none;
   color: $color-fiord;
-  border-radius: 1rem;
   font-weight: bold;
   transition: 0.5s;
 
@@ -78,28 +78,28 @@
 }
 
 .project__stage {
-  padding: 1rem 1rem;
+  padding: 1rem;
   font-size: 1.2rem;
   line-height: 1.2rem;
   margin: 0rem 1rem 0.5rem 1rem;
-  text-align: justify;
 }
 
-.my-cv__icon--cancel-circle {
+.my-cv__icon--plus {
   float:right;
-  transform: rotateZ(45deg);
-  pointer-events: none;
   transition: 0.5s;
+  pointer-events: none;
 
   &:hover {
     color: $color-fiord;
-  }
+  }  
 }
 
 .project__input:checked + .project__title {
-  .my-cv__icon--cancel-circle {
-    transform: initial;
+  .my-cv__icon--plus {
     pointer-events: all;
+    transform: rotateZ(45deg);
+    transition: 0.5s;    
+    cursor: pointer;
   }
   background-color: $color-sunglow;
 }
